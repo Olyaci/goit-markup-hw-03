@@ -306,11 +306,10 @@ nav {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .box-prj {
-    margin-bottom: 30px;
     background: var(--primary-background);
     border: 1px solid var(--shadow-color);
 }
