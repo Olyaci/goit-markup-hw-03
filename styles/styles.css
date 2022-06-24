@@ -1,0 +1,381 @@
+*,
+*::after, 
+*::before {
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-background: #FFF;
+    --second-background: #F5F4FA;
+    --dark-background: #2F303A;
+    --accent-color: #2196F3;
+    --contact-color: rgba(255, 255, 255, 0.6);
+    --main-color: #757575;
+    --title-color: #212121;
+    --shadow-color: #EEEEEE;
+    --order-hover: #188CE8;
+    --logo-second-half: #000000;
+    --border: #ECECEC;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--primary-background);
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul, li {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    border: 1px solid var(--border);
+}
+
+/*WebStudio*/
+nav > a {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-second-half);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+nav > a > span {
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu {
+    display: flex;
+    margin-left: 96px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.studio, .portfolio, .contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--title-color);  
+}
+
+.studio, .portfolio, .mail-h {
+    padding-right: 50px;
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.studio:active, .portfolio:active, .contacts:active  {
+    color: var(--accent-color);
+}
+
+.contacts:hover, .studio:hover, .portfolio:hover {
+    color: var(--accent-color);
+}
+
+.contacts:current, .studio:current, .portfolio:current {
+    color: var(--accent-color);
+}
+
+.contact-us {
+    display: flex;
+    align-items: center;
+    padding-left: 328px;
+}
+
+.mail-h, .tel-h {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+.mail-h:hover, .tel-h:hover, .mail-h:active, .tel-h:active{
+    color: var(--accent-color); 
+} 
+
+/*Main-webstudio*/
+
+.hat {
+    background-color: var(--dark-background);
+    display: flex;
+    justify-content: center;
+}
+
+.head {
+    margin-top: 200px;
+    margin-bottom: 280px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-background);
+}
+
+.order {
+    margin-top: 350px;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.order:hover {
+    background: var(--order-hover);
+}
+
+.text-order {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    
+    letter-spacing: 0.06em;
+    color: var(--primary-background);
+}
+
+.softskills {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.title-softskills {
+    display: none;
+}
+
+.feature {
+    display: flex;
+}
+
+.feature1, .feature2, .feature3 {
+    padding-right: 30px;
+}
+
+.skills {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+
+.prg {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+.presentation {
+    padding-bottom: 94px;
+}
+
+.whatdo {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+
+.box-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-team {
+    background: var(--second-background);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.ourteam {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.people1, .people2, .people3, .people4 {
+    background: var(--primary-background);
+}
+
+.developer {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);    
+}
+
+.sub-d {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+/*Main-portfolio*/
+
+.main-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.projects-title {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.filter1, .filter2, .filter3, .filter4 {
+    padding-right: 8px;
+}
+
+.filter {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    background: var(--second-background);
+    border-radius: 4px;
+}
+
+.filter:active, .filter:hover, .filter:focus {
+    color: var(--primary-background);
+    background: var(--accent-color);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box-prj {
+    margin-bottom: 30px;
+    background: var(--primary-background);
+    border: 1px solid var(--shadow-color);
+}
+
+.name-develop, .sub-name {
+    padding-left: 24px;
+}
+
+.name-develop {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+    
+.sub-name {  
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+footer {
+    display: flex;
+    background-color: var(--dark-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer > div > a {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--primary-background);
+}
+
+footer > div > a > span {
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.location {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--primary-background);
+}
+
+.mail-f {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--contact-color);
+}
+
+.tel-f {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--contact-color);
+}
+
+.mail-f:hover, .tel-f:hover, .mail-f:active, .tel-f:active{
+    color: var(--accent-color); 
+} 
